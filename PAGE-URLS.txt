@@ -1,0 +1,55 @@
+REMAPWORKS UK — PAGE URLS
+
+Production URLs below become live after deployment and domain connection.
+
+https://remapworksuk.com/
+https://remapworksuk.com/services/stage-1-remapping/
+https://remapworksuk.com/services/stage-2-tuning/
+https://remapworksuk.com/services/ecu-remapping/
+https://remapworksuk.com/services/performance-remapping/
+https://remapworksuk.com/services/economy-remapping/
+https://remapworksuk.com/services/gearbox-tuning/
+https://remapworksuk.com/services/tcu-cloning/
+https://remapworksuk.com/services/software-upgrades/
+https://remapworksuk.com/services/vehicle-diagnostics/
+https://remapworksuk.com/services/adblue-diagnostics/
+https://remapworksuk.com/services/dpf-diagnostics/
+https://remapworksuk.com/services/egr-diagnostics/
+https://remapworksuk.com/services/swirl-flap-repair/
+https://remapworksuk.com/services/
+https://remapworksuk.com/about/
+https://remapworksuk.com/pricing/
+https://remapworksuk.com/areas/
+https://remapworksuk.com/faqs/
+https://remapworksuk.com/contact/
+https://remapworksuk.com/privacy-policy/
+https://remapworksuk.com/terms/
+
+Current private review URLs (sign in with the owning ChatGPT account):
+
+https://remapworks-uk.cherryfoam.chatgpt.site/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/stage-1-remapping/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/stage-2-tuning/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/ecu-remapping/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/performance-remapping/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/economy-remapping/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/gearbox-tuning/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/tcu-cloning/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/software-upgrades/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/vehicle-diagnostics/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/adblue-diagnostics/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/dpf-diagnostics/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/egr-diagnostics/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/swirl-flap-repair/
+https://remapworks-uk.cherryfoam.chatgpt.site/services/
+https://remapworks-uk.cherryfoam.chatgpt.site/about/
+https://remapworks-uk.cherryfoam.chatgpt.site/pricing/
+https://remapworks-uk.cherryfoam.chatgpt.site/areas/
+https://remapworks-uk.cherryfoam.chatgpt.site/faqs/
+https://remapworks-uk.cherryfoam.chatgpt.site/contact/
+https://remapworks-uk.cherryfoam.chatgpt.site/privacy-policy/
+https://remapworks-uk.cherryfoam.chatgpt.site/terms/
+
+Custom error page: /404.html
+Sitemap: /sitemap.xml
+Crawler rules: /robots.txt
