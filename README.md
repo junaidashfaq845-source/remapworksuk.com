@@ -1,89 +1,50 @@
-# RemapWorks UK — Vercel Website Package
+# RemapWorks UK — GitHub upload package
 
-Latest approved styling and requested revisions: black page backgrounds, white service cards, green WhatsApp buttons, red Call buttons, individual service photographs, compact multi-service enquiry dropdown, mobile-service wording on every page and The Marketing Lab footer credit.
+Updated 16 November 2026. Includes every website change made in this conversation, including the latest Get Quote form and Starting from prices. Source snapshot: a2a481537a1c49366be802f5df8c2ef0c7b9fbca.
 
-## What to upload
+## Upload into the existing repository shown in your screenshot
 
-Upload this entire extracted folder, including `dist/`, `source/` and `vercel.json`. The `dist` folder contains the finished HTML, CSS, JavaScript and images. No Python, Node build, database or paid dependency is required to host these finished files.
+1. First back up your current repository using Code > Download ZIP.
+2. Extract this ZIP. Open RemapWorks-UK-Updated.
+3. In GitHub open the existing remapworksuk.com repository, main branch, at its TOP LEVEL (where dist, source and vercel.json are visible).
+4. Select Add file > Upload files. Drag in ALL the CONTENTS of RemapWorks-UK-Updated: the dist and source folders, FILE-CHECKSUMS.json, PAGE-URLS.txt, QA-REPORT.md, README.md and vercel.json.
+5. Do not upload the ZIP itself. Do not drag the enclosing RemapWorks-UK-Updated folder. Do not open dist in GitHub before uploading. Correct paths include dist/index.html, dist/app.js, source/build.py and vercel.json.
+6. Wait until every file finishes uploading, then Commit changes to main (or use your required pull-request workflow). Files at identical paths are updated and the new Extras page is added. The ZIP is below the browser upload file-count limit.
+7. Open the SAME Vercel project's Deployments tab. With normal Git integration enabled, the new main commit triggers a deployment. Wait for Ready and confirm that deployment serves the production domain.
+8. Reload the domain with Ctrl+F5 or in a private window and check Home, Services, Pricing and Contact. Do not change DNS or create a new Vercel project.
 
-## Deploy through Vercel and GitHub
+For this package, removed cards are removed by replacing dist/index.html and dist/services/index.html. There is no separate card file to delete. Uploading the folders alone does not remove arbitrary old files with different names. Existing standalone service URLs have intentionally been retained, as in the approved preview, to avoid broken links; removing a card was not a request to delete its page. They are not reintroduced as cards. If you want old service pages retired as well, that is a separate redirect/consolidation change.
 
-1. Extract `RemapWorks-UK-Vercel.zip` on your computer.
-2. Create a GitHub repository and upload the contents of the extracted `RemapWorks-UK-Vercel` folder. `vercel.json` and `dist` must be at the repository root, not inside another wrapper folder.
-3. In Vercel, choose **Add New → Project**, then import that repository.
-4. Framework Preset: **Other**. Root Directory: repository root. Output Directory: **dist**. Build Command: leave empty. Install Command: leave empty. The included `vercel.json` already supplies these settings.
-5. Deploy, then open the Vercel URL and check the pages listed in `PAGE-URLS.txt` before connecting your domain.
+If GitHub rejects the web upload, use GitHub Desktop: clone/open the same repository, copy these contents into its root choosing Replace for matching files, review changes, Commit and Push. Preserve unrelated files, custom verification tags and any manual tracking changes you added. This package reflects the preview source; it cannot include unseen edits in your GitHub repository. Back up and reconcile those before replacement.
 
-Do not upload the ZIP itself as a website file. Extract it first.
+## Vercel settings
 
-## Alternative: Vercel CLI
+The included vercel.json serves the already-generated dist folder with no install/build command. Framework: Other; Output Directory: dist; Root Directory: repository root. Keep your existing project/domain. Clear conflicting dashboard build/install overrides if they exist. No dependency installation is required. Existing production remains until you push and Vercel deploys successfully; no external GitHub/Vercel/DNS changes were made by this delivery.
 
-With Node.js installed, open a terminal in the extracted folder containing `vercel.json` and run:
+## Included changes
 
-```sh
-npx vercel
-```
+- Mobile ECU remapping in Birmingham & the West Midlands; updated ECU/TCU and doorstep wording.
+- Black page backgrounds, white service cards, red Call buttons, green WhatsApp buttons.
+- Eight current service cards: Stage 1, Stage 2/2+, Bench ECU Remapping, Gearbox/TCU Flashing, Vehicle Diagnostics, AdBlue Diagnostics & Repair, combined DPF/EGR Solutions, Additional Services / Extras.
+- Separate duplicate Performance, Economy, TCU Cloning, Software Upgrade, EGR and Swirl Flap cards stay removed. Gearbox and combined DPF/EGR were restored/grouped under later client instructions. Diesel performance/economy/50:50 choices sit within Stage 1.
+- All published prices say Starting from: Stage 1 £199, Stage 2/2+ £250, Gearbox/TCU £199, all other listed services £120. Final scope and price are agreed before booking.
+- Extras has its own image card, detail page, quote price and Call/WhatsApp links. Motorsport use is assessed for sound, RPM and limiter requests; road-vehicle safety/emissions systems remain intact. Swirl flap wording covers compliant diagnosis/repair.
+- Compact multi-select service field. Form button says Get Quote. Form copy does not name WhatsApp; submission still prepares an encoded WhatsApp message. The customer reviews it and presses Send; opening the message is not a completed enquiry or booking.
+- Footer credit: Designed By The Marketing Lab, linked to https://www.themarketinglabdigital.com/.
 
-Sign in and follow Vercel's prompts to create a preview. When ready to publish:
+## Editing later
 
-```sh
-npx vercel --prod
-```
+Edit source/build.py for services, prices, form options and general copy; source/enrich.py for service details. Run python3 source/build.py from the repository root, then upload/commit BOTH source and dist. Direct generated HTML edits are overwritten by regeneration. Styling: dist/style.css; form logic: dist/app.js; imagery: dist/assets. No third-party Python dependencies.
 
-No deployment or domain/DNS change has been made to your own Vercel account by preparing this package.
+Local preview: python3 -m http.server 8080 --directory dist, then open http://localhost:8080. Form harness: node source/test-form.cjs from the repository root.
 
-## Connect remapworksuk.com
+## Remaining review items
 
-In your Vercel project, open **Settings → Domains** and add `remapworksuk.com` and optionally `www.remapworksuk.com`. Use the exact DNS records Vercel displays at your domain registrar. Do not replace unrelated email/MX records. Choose one primary hostname and redirect the other to it. The current canonicals and sitemap use `https://remapworksuk.com/`.
+Privacy Policy and Terms are labelled review drafts, not final legal advice. Legal trading details and business terms need client review. Images are illustrative. No invented address, hours, reviews, certifications or guarantees. No analytics/advertising IDs or tags have been invented. Preserve any real tracking or verification code you added independently.
 
-After verification and HTTPS activation, test both hostnames, the contact form, an internal service URL and a non-existent URL. Your Vercel deployment must be checked after upload; this package has not been deployed inside your Vercel account.
+## SEO and tracking
 
-## Preview locally
+Canonical URLs, sitemap and robots use https://remapworksuk.com only. PAGE-URLS.txt lists public page URLs. Verify the domain in Search Console and submit /sitemap.xml. Add real GA4/GTM/Ads IDs only with an appropriate consent setup and test them. A phone or WhatsApp click is not evidence of a connected call or delivered message. No live WhatsApp delivery or Google Ads conversion was claimed.
 
-From the extracted project folder, with Python installed:
-
-```sh
-python -m http.server 8080 --directory dist
-```
-
-Visit `http://localhost:8080/`. Use a web server rather than double-clicking `index.html`, because asset links start at `/`.
-
-## Edit text, prices, services and images
-
-- Edit shared page content, contact details, service descriptions, prices and the form in `source/build.py`.
-- Edit additional service-specific explanations in `source/enrich.py`.
-- Rebuild the HTML from the project root with `python source/build.py`.
-- Edit styles in `dist/style.css` and interactive behaviour in `dist/app.js`; these files are not overwritten by the HTML generator.
-- Service photos are in `dist/assets/services/`; preserve the filenames or update the image references in `source/build.py`. Use 16:9 images. The hero is `dist/assets/hero-road.webp` and the logo is `dist/assets/remapworks-logo.svg`.
-- Redeploy after editing. Never run the old one-off redesign script; it is intentionally excluded.
-
-The supplied prices are Stage 1 from £180 and Stage 2 / Stage 2+ from £250. Other services use Request a Quote. No emission-deletion prices have been substituted for compliant repairs.
-
-## Enquiry form
-
-All 13 services are available through the compact multi-select dropdown on the homepage and contact page. The form validates required fields, email, phone, at least one service and consent. Comments are limited to 600 characters.
-
-Submission prepares a URL-encoded message for WhatsApp number `447376668716`. The customer must still press **Send** in WhatsApp. Opening WhatsApp is not a confirmed enquiry, booking or conversion. No test message or telephone call was sent during checks.
-
-## Search Console, GA4 and Google Ads
-
-- Verify the real domain in Google Search Console using its supplied DNS verification record.
-- Submit `https://remapworksuk.com/sitemap.xml` after deployment.
-- Check indexing, the homepage and key service URLs with URL Inspection.
-- Titles, descriptions, canonical URLs, Open Graph tags, Service/Business/Breadcrumb JSON-LD, image alt text, robots.txt and sitemap are included.
-- No analytics, Google Tag Manager or Google Ads IDs are installed or invented. `window.remapWorksTracking` in `dist/app.js` is only a disabled configuration marker; filling those values alone does not install tracking.
-- To enable tracking, implement the real GTM/GA4 tags and appropriate UK consent controls, then test with Tag Assistant, GA4 DebugView and the relevant Google Ads conversion diagnostics.
-- Track Call/WhatsApp clicks as click events; only count qualified calls or confirmed leads as completed lead conversions when reliable measurement is available. A WhatsApp window opening is not proof of delivery.
-- If the primary domain changes, update the base URL in `source/build.py` and rebuild before submission to Search Console.
-
-## Before public launch
-
-Privacy Policy and Terms & Conditions remain clearly marked review drafts. The business must confirm legal identity, postal contact, retention and service terms before using final policies with customers. No operating hours, physical workshop address, customer reviews, fixed performance gains or guarantees have been invented. Images are illustrative AI-generated automotive scenes, not photographs of the business premises.
-
-See `QA-REPORT.md` for the completed checks, scope and remaining verification limits, and `PAGE-URLS.txt` for every page URL.
-
-## Official deployment references
-
-https://vercel.com/docs/builds/configure-a-build
-https://vercel.com/docs/cli/deploy
-https://vercel.com/docs/domains
+GitHub upload guide: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+Vercel Git deployments: https://vercel.com/docs/git

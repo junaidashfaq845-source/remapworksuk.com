@@ -45,3 +45,6 @@ p,.innerhero p,.light p{color:#b9bdc5}
 @media(min-width:761px){.hero h1{font-size:clamp(42px,3.8vw,57px);max-width:700px}}
 @media(max-width:760px){.service-picker>summary,.service-picker>summary span{font-size:16px}.service-options{max-height:260px}}
 .service-picker:not([open]) .service-options{display:none}
+
+.extras-topics{padding-left:1.15rem;margin:0 0 1.25rem;color:inherit;font-size:.9rem;line-height:1.6}.extras-topics li+li{margin-top:.4rem}
+.grid:has(.extras-topics){align-items:start}
