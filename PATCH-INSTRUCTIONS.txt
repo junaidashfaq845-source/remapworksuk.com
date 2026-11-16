@@ -1,0 +1,17 @@
+REMAPWORKS UK — EXTRAS CARD HEIGHT FIX
+
+This is a small patch for the complete GitHub package you already uploaded on 16 November 2026. It contains ONLY the changed website files; keep every other existing file.
+
+1. Extract this ZIP and open the extracted folder.
+2. Open your existing remapworksuk.com GitHub repository at its TOP LEVEL, on main.
+3. Add file > Upload files. Drag in the dist and source folders from this patch. Do not upload the ZIP itself or an extra enclosing folder.
+4. The paths must be dist/index.html, dist/services/index.html and source/build.py. Wait for upload to finish, then Commit changes.
+5. Vercel should deploy the connected production branch as configured. Wait for Ready, then refresh your domain with Ctrl+F5.
+
+Do NOT delete other files, replace vercel.json, change DNS, or create a new Vercel project.
+
+The Extras card now uses the same compact image/description/CTA layout as the other cards on Home and Services. Its full list and scope remain on the unchanged dedicated Additional Services page linked by Explore service. Prices, Get Quote wording, WhatsApp submission, images and other pages remain unchanged.
+
+Verified in browser: all eight cards have the same desktop height at 768, 1024 and 1440px on Home and Services. No horizontal overflow or broken loaded images observed at 320, 390, 768, 1024 or 1440px. This patch was not pushed to your external GitHub repository or live Vercel project.
+
+Your previous FILE-CHECKSUMS.json / QA-REPORT.md describe the earlier full package; this patch supersedes the hashes for these three changed files only. PATCH-CHECKSUMS.json lists the new hashes if needed.
